@@ -2,7 +2,7 @@ process {
     Id = "deploymentprocess-Projects-6"
     OwnerId = "Projects-6"
     IsFrozen = false
-    Version = 1
+    Version = 2
     SpaceId = "Spaces-1"
     Steps {
         run_a_script {
@@ -24,7 +24,7 @@ process {
                     Environments = []
                     ExcludedEnvironments = []
                     Channels = []
-                    TenantTags = []
+                    TenantTags = ["TagSets-1/Tags-1", "TagSets-1/Tags-2", "TagSets-1/Tags-3"]
                     Packages {
                     }
                     Condition = "Success"
@@ -76,5 +76,5 @@ process {
             }
         }
     }
-    RelatedDocumentIds = []
+    RelatedDocumentIds = ["TagSets-1/Tags-1", "TagSets-1/Tags-2", "TagSets-1/Tags-3"]
 }
